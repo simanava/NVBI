@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html{
+	margin:0;
+	background: url(../images/bgBlend.jpg) repeat-x;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:16px;
+	color:#565656;
+	overflow-x: hidden;
+}
+.wrapMain{
+	position:relative;
+	margin:0 auto;
+	width:1058px;
+	height:2670px;
+	background:url(../images/bgMain.jpg);
+}
+.formP1{
+	position:absolute;
+	width: 284px;
+	height: 388px;
+	top: 170px;
+	right: 104px;
+}
+.formP1 .row{
+	position:relative;
+	float:left;
+	margin:0 0 12px 0;
+	width:100%;
+}
+.formP1 label{
+	font-size:12px;
+	line-height:24px;
+	color:#FFF;
+	position:relative;
+	width:85px;
+	height:24px;
+	float:left;
+	text-align:right;
+}
+.formP1 input{
+	position: relative;
+	float: left;
+	width: 160px;	
+	height: 20px;
+	background: none;
+	line-height: 12px;
+	background: #FFF;
+	border: 2px solid #852658;
+	margin:0 0 0 10px;
+}
+.formP1 input.short{
+	width:80px;
+}
+.formP1 .subBtn{
+	margin: 18px 0 0 8px;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 70px;
+	background: none;
+	border:none;
+}
+.styleSelect{
+	position: relative;
+	float: left;
+	border: 2px solid #852658;
+	display: inline-block;
+	width: 161px;
+	min-height: 18px;
+	margin: 0 0 0 10px;
+	background: url(../images/arrowsSelect.png) right 5px no-repeat white;
+	overflow: hidden;
+}
+select{
+	position: relative;
+	float: left;
+	width: 192px;
+	height: 22px !important;
+	font-size: 12px;
+	line-height:12px;
+	padding: 3px 5px;
+	margin: 0px;
+	-webkit-appearance: none;
+	border: none;
+	background: transparent;
+}
+p.popularUsDoctor{
+	position: absolute;
+	top: 1091px;
+	left: 133px;
+	width: 166px;
+	font-size: 17px;
+	line-height: 20px;
+}
+p.rkit{
+	position: absolute;
+	top:1770px;
+	left: 212px;
+	width: 340px;
+}
+p.atlo{
+	position: absolute;
+	top: 1485px;
+	left: 167px;
+	width: 395px;
+}
+p.ascb{
+	position: absolute;
+	top: 761px;
+	left: 133px;
+	width: 368px;
+}
+p.ingredients{
+	position:absolute;
+	left:345px;
+	width:585px;
+}
+p.raspberry{
+	top:2258px;
+}
+p.mango{
+	width: 320px;
+	left: 212px;
+	top: 1870px;
+}
+p.tea{
+	width: 330px;
+	left: 212px;
+	top:1970px;
+}
+p.vinegar{
+	left: 616px;
+	width: 335px;
+	top: 1770px;
+}
+p.grapefruit{
+	left: 616px;
+	width: 335px;
+	top:1870px;
+}
+p.resveratrol{
+	left: 616px;
+	width: 360px;
+	top:1970px;
+}
+p.anmw{
+	color: white;
+	position: absolute;
+	top: 3060px;
+	left: 172px;
+	width: 250px;
+}
+p.wtui{
+	position:absolute;
+	color:#FFF;
+	left:172px;
+	top:3184px;
+	width:400px;
+}
+p.ritp{
+	position:absolute;
+	color:#FFF;
+	left:172px;
+	top:3273px;
+	width:400px;
+}
+span.spacer{
+	position:relative;
+	float:left;
+}
+a.tryIt{
+	text-indent: -9999px;
+	position: absolute;
+	top: 945px;
+	right: 95px;
+	width: 443px;
+	height: 65px;
+}
+a.tryItToday{
+	text-indent: -9999px;
+	position: absolute;
+	bottom: 510px;
+	right: 287px;
+	width: 443px;
+	height: 65px;
+}
+a.rushMyOrder{
+	text-indent:-9999px;
+	position: absolute;
+	bottom: 153px;
+	right: 150px;
+	width: 343px;
+	height: 65px;
+}
+.sect2{
+	position:relative;
+	margin:15px auto 0 auto;
+	width:991px;
+	height:1361px;
+	left:-18px;
+	background:url(../images/sect2.jpg) no-repeat;
+}
+a.orderToday{
+	width: 345px;
+	left: 615px;
+	bottom: 96px;
+}
+.termsPrivacy {
+	width: 100%;
+	font-size: 10px;
+	color: #565656;
+	position: relative;
+	text-align: center;
+	margin:0 0 20px 0;
+}

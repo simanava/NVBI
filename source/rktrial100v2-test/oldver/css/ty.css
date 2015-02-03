@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #565656;
+}
+.wrapMain {
+	position: relative;
+	margin: 0 auto;
+	width: 1120px;
+	height: 750px;
+	background: url(../images/bgMain_ty.jpg);
+}
+p.receipt {
+	position: absolute;
+	top: 180px;
+	left: 144px;
+}
+h1.tableHead {
+	font-weight: bold;
+	color: #a52062;
+}
+.orderInfo {
+	position: absolute;
+	top: 340px;
+	left: 160px;
+}
+.orderSummary {
+	position: absolute;
+	top: 340px;
+	left: 397px;
+}
+.orderQuestions {
+	position: absolute;
+	top: 476px;
+	left: 397px;
+}
+p.questions {
+	position: absolute;
+	top: 494px;
+	left: 397px;
+}
+.termsPrivacy {
+	width: 100%;
+	height: 24px;
+	bottom: 118px;
+	font-size: 10px;
+	color: #565656;
+	position: absolute;
+	text-align: center;
+}
+.orderInfoTable {
+	position: absolute;
+	left: 168px;
+	top: 374px;
+	line-height: 17px;
+}
+.orderSumTable {
+	position: absolute;
+	left: 404px;
+	top: 374px;
+}
+.red {
+	color: #F00;
+}
+.printBtn {
+	position: absolute;
+	top: 326px;
+	left: 584px;
+	width: 103px;
+	height: 26px;
+	border: none;
+	text-indent:-9999px;
+}

@@ -1,0 +1,123 @@
+/*
+ * Original code from http://www.lifecellskin.com/
+ * Modified on Nov 3 2010
+ */
+$(function(){
+
+    //this shouldnt be in the javascript
+$('<div class="popup_1500" style="z-index:10000;"><a href="#Top" onclick="ClickTracking(92); $(window).scrollTop(0); return false;" onmouseover="HoverTracking(92);"><img src="images/promo.png"  height="330" width="284" border="0" /></a></div>').appendTo("body");
+
+    $(".popup_1500").css({
+        position:($.browser.msie&&$.browser.version<7?"absolute":"fixed"),
+        bottom:"-330px",
+        right:"10px"
+    });
+    $(window).bind("scroll",function(){
+        var b=$(this),c=$(".popup_1500");
+        if(c.css("position")=="absolute"){
+            if(!b.data("poped")){
+                c.css({
+                    top:b.scrollTop()+b.height()+300+"px"
+                })
+            }else{
+                if(c.data("showing")){
+                    c.animate({
+                        top:b.scrollTop()+b.height()-217+"px"
+                    },{
+                        duration:"slow",
+                        easing:"easeOutBounce",
+                        queue:false
+                    })
+                }else{
+                    c.stop('true','true').animate({
+                        top:b.scrollTop()+b.height()-60+"px"
+                    },{
+                        duration:"slow",
+                        easing:"easeOutBounce",
+                        queue:false
+                    })
+                }
+            }
+        }
+        if(b.scrollTop()>=400){
+            if(c.css("position")=="fixed"){
+                if(!b.data("poped")){
+                    b.data("poped",true);
+                    c.animate({
+                        bottom:"-100px"
+                    },{
+                        duration:"fast",
+                        easing:"linear"
+                    }).animate({
+                        bottom:"-15px"
+                    },{
+                        duration:"slow",
+                        easing:"easeOutBounce"
+                    }).delay(7000).animate({
+                        bottom:"-250px"
+                    },{
+                        duration:"slow",
+                        easing:"easeInOutBack",
+                        complete:function(){
+                            $(this).bind("mouseover",function(){
+                                $(this).stop('true','true').animate({
+                                    bottom:"-15px"
+                                },{
+                                    duration:"slow",
+                                    easing:"easeOutBounce"
+                                })
+                            }).bind("mouseout",function(){
+                                $(this).stop('true','true').animate({
+                                    bottom:"-250px"
+                                },{
+                                    duration:"slow",
+                                    easing:"easeOutBounce"
+                                })
+                            })
+                        }
+                    })
+                }
+            }else{
+                if(!b.data("poped")){
+                    b.data("poped",true);
+                    c.data("showing",true).stop('true','true').animate({
+                        top:b.scrollTop()+b.height()-100+"px"
+                    },{
+                        duration:"fast",
+                        easing:"linear"
+                    }).stop('true','true').animate({
+                        top:b.scrollTop()+b.height()-217+"px"
+                    },{
+                        duration:"slow",
+                        easing:"easeOutBounce"
+                    }).delay(7000).stop('true','true').animate({
+                        top:b.scrollTop()+b.height()-60+"px"
+                    },{
+                        duration:"slow",
+                        easing:"easeInOutBack",
+                        complete:function(){
+                            $(this).data("showing",false).bind("mouseover",function(){
+                                $(this).stop('true','true').animate({
+                                    top:b.scrollTop()+b.height()-217+"px"
+                                },{
+                                    duration:"slow",
+                                    easing:"easeOutBounce"
+                                })
+                            }).bind("mouseout",function(){
+                                $(this).stop('true','true').animate({
+                                    top:b.scrollTop()+b.height()-60+"px"
+                                },{
+                                    duration:"slow",
+                                    easing:"easeOutBounce"
+                                })
+                            })
+                        }
+                    })
+                }
+            }
+        }
+    }).data("poped",false)
+	
+	$('.popup_1500').mouseover(function() {
+	})
+});
